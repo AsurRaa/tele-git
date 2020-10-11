@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // author: @lyhourchhen
 // copyright: @asurraa
 // date: 11/10/2020
