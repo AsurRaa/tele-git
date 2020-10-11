@@ -4,4 +4,4 @@
 
 ## More
 
-- 2020 - @Asurraa.
+- **2020 @Asurraa**.
