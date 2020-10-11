@@ -1,4 +1,4 @@
-# Telegram Script
+# Tele Script Alert Cli
 
 > hook any script to the telegram group alert.
 
