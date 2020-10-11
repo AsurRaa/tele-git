@@ -5,16 +5,34 @@
 // date: 11/10/2020
 // descriptive: cli-script or module to alert to telegram-group.
 
+// import
+const fs = require("fs");
 const { Telegraf } = require("telegraf");
 const { argv } = require("yargs");
-const config = require("./telegit.json");
+
 const chalk = require("chalk");
 const errorStack = require("./utils/errorStack.js");
+
+// Check for config file is found or not
+const path = "./teleConfig.json";
+try {
+  if (fs.existsSync(path)) {
+    console.log(chalk.green.bold("Config file found."));
+  }
+  if (fs.existsSync(path) === false) {
+    throw errorStack(
+      "You must initate your config file before preceed this cli"
+    );
+  }
+} catch (err) {
+  throw errorStack("You must initate your config file before preceed this cli");
+}
+const config = require("./teleConfig.json");
 // constant
 const telegram_to = config.telegram_to;
 const telegram_token = config.telegram_token;
 let message = "";
-console.log("empty argv", argv[2] == null);
+
 if (argv[2] == null) {
   throw errorStack("Argument must not be null.");
 }

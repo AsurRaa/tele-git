@@ -1,6 +1,6 @@
 {
-  "name": "telegram-script",
-  "version": "1.0.0",
+  "name": "tele-script-alert-cli",
+  "version": "0.0.1a",
   "description": "hook any script to the telegram group alert.",
   "main": "index.js",
   "repository": "git@github.com:AsurRaa/tele-git.git",
