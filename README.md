@@ -1,4 +1,4 @@
-# TeleGit
+# Telegram Script
 
 > hook any script to the telegram group alert.
 

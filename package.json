@@ -1,5 +1,5 @@
 {
-  "name": "tele-git",
+  "name": "telegram-script",
   "version": "1.0.0",
   "description": "hook any script to the telegram group alert.",
   "main": "index.js",

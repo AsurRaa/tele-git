@@ -7,11 +7,15 @@ const { Telegraf } = require("telegraf");
 const { argv } = require("yargs");
 const config = require("./telegit.json");
 const chalk = require("chalk");
+const errorStack = require("./utils/errorStack.js");
 // constant
 const telegram_to = config.telegram_to;
 const telegram_token = config.telegram_token;
 let message = "";
-
+console.log("empty argv", argv[2] == null);
+if (argv[2] == null) {
+  throw errorStack("Argument must not be null.");
+}
 if (argv.message) {
   console.log(
     chalk.blue.bold("your message:\n-------------\n"),
