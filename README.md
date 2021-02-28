@@ -1,4 +1,4 @@
-# Tele Script Alert Cli
+# Tele Script Alert Cli (DEPRECATED)
 
 > hook any script to the telegram group alert.
 
